@@ -1,15 +1,9 @@
 import AboutText from "./AboutText"
 
-const About = ({img1, img2, img3}) => {
+const About = ({background}) => {
     return (
-        <div id='about'>
+        <div id='about' style={{ backgroundImage: `linear-gradient(to bottom, rgba(6, 37, 73, 0.8), rgba(6, 37, 73, 0.4)), url(${background})`, backgroundPosition: 'center', backgroundAttachment: 'fixed', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
             <AboutText />
-            <div id='img1' style={{ backgroundImage: `url(${img1})`, backgroundPosition: 'inherit', backgroundAttachment: 'fixed', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
-            </div>
-            <div id='img2' style={{ backgroundImage: `url(${img2})`, backgroundPosition: 'inherit', backgroundAttachment: 'fixed', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
-            </div>
-            <div id='img3' style={{ backgroundImage: `url(${img3})`, backgroundPosition: 'inherit', backgroundAttachment: 'fixed', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
-            </div>
         </div>
     )
 }
