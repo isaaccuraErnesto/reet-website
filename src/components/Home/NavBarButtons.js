@@ -6,7 +6,7 @@ const NavBarButtons = () => {
             <NavBarButton id='home-button' text='Home' section='#home'/>
             <NavBarButton id='about-button' text='About' section='#about'/>
             <NavBarButton id='projects-button' text='Projects' section='#projects'/>
-            <NavBarButton id='services-button' text='Services' section='/#'/>
+            <NavBarButton id='services-button' text='Services' section='#services'/>
             <NavBarButton id='contact-button' text='Contact' section='/#'/>
         </div>
     )
