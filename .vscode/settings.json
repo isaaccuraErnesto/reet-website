@@ -1,5 +1,5 @@
 {
-    "cSpell.words": [
-        "Reet"
-    ]
+  "cSpell.words": ["Reet"],
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true
 }

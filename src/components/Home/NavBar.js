@@ -1,13 +1,25 @@
-import NavBarButtons from './NavBarButtons'
-import ReetLogo from './ReetLogo'
+import React, { useState } from 'react';
+import NavBarButtons from './NavBarButtons';
+import ReetLogo from './ReetLogo';
+import MobileMenu from './MobileMenu';
 
-const NavBar = ({logo}) => {
-    return (
-        <div id='nav-bar' className='d-flex justify-content-between align-items-center'>
-            <ReetLogo logo={logo}/>
-            <NavBarButtons />
-        </div>
-    )
-}
+const NavBar = ({ logo }) => {
+  const [clickStatus, setClickStatus] = useState(false);
 
-export default NavBar
+  const handleClick = () => {
+    setClickStatus(!clickStatus);
+  };
+
+  return (
+    <nav
+      id='nav-bar'
+      className='d-flex justify-content-between align-items-center'
+    >
+      <ReetLogo logo={logo} />
+      <MobileMenu clickStatus={clickStatus} handleClick={handleClick} />
+      <NavBarButtons clickStatus={clickStatus} />
+    </nav>
+  );
+};
+
+export default NavBar;

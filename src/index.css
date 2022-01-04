@@ -1,8 +1,9 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
 }
 
 body,
@@ -10,6 +11,7 @@ html,
 #root,
 .site {
   height: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .site {
@@ -20,6 +22,7 @@ html,
 
 #home {
   height: 100vh;
+  min-height: 500px;
   width: 100%;
   overflow: hidden;
 }
@@ -30,7 +33,7 @@ html,
   border-bottom: solid 1px #c5c4c4;
   position: fixed;
   background-color: #f5f5f5;
-  z-index: 99;
+  z-index: 10;
 }
 
 #nav-bar-logo {
@@ -48,6 +51,10 @@ html,
   text-align: center;
   color: #062549;
   width: 90px;
+}
+
+.nav-bar-link:hover {
+  color: #35c0ed;
 }
 
 #home-main-logo {
@@ -108,12 +115,17 @@ figcaption {
 }
 
 #about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 80%;
+  min-height: 520px;
   font-size: 0.9em;
   color: #fff;
   letter-spacing: 4px;
   text-align: justify;
-  padding: 3em 6em 3em 3em;
+  padding: 3em;
   margin: auto;
   line-height: 2;
 }
@@ -122,6 +134,7 @@ figcaption {
   background-color: #062549;
   color: #f5f5f5;
   line-height: 1.7;
+  min-height: 500px;
 }
 
 #slider {
@@ -129,6 +142,7 @@ figcaption {
   overflow: hidden;
   width: 100%;
   height: 100vh;
+  min-height: 500px;
 }
 
 .project-slide-c {
@@ -177,6 +191,10 @@ figcaption {
 
 .project-slide-r.right {
   opacity: 0.5;
+}
+
+.hidden-project-description {
+  opacity: 0;
 }
 
 .project-slide-c .project-description {
@@ -282,4 +300,305 @@ figcaption {
 
 .service-box hr {
   margin: 30px;
+}
+
+#contact {
+  position: relative;
+  height: 90%;
+  min-height: 620px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #062549;
+  border-top: 66px solid #f5f5f5;
+}
+
+.contact-form {
+  position: absolute;
+  width: 40%;
+  min-width: 200px;
+  height: 80%;
+  min-height: 450px;
+  background-color: #fff;
+  color: #062549;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  top: 10%;
+  left: 4%;
+  padding-block: 20px;
+  border-radius: 3px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 9px;
+  padding-inline-start: 12px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  outline: none;
+  font-family: inherit;
+  background-color: #f5f5f5;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border: 1px solid #35c0ed;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px solid #9aeba6;
+  background-color: transparent;
+}
+
+.wide-fields {
+  position: relative;
+  width: 90%;
+}
+
+.double-field {
+  position: relative;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.narrow-fields {
+  position: relative;
+  width: 46%;
+}
+
+.form-label,
+.form-placeholder {
+  position: absolute;
+  top: 9px;
+  left: 8px;
+  cursor: text;
+}
+
+.form-label {
+  color: #4e4e4ea4;
+  padding-inline: 4px;
+  opacity: 0;
+  transition: font-size 100ms ease-in;
+}
+
+.form-placeholder {
+  color: #858585a4;
+  padding-inline-start: 4px;
+}
+
+.form-error-message {
+  font-size: 0.6em;
+  color: #eba69a;
+  margin-inline-start: 1em;
+  margin-block-end: 1em;
+}
+
+.form-input:focus ~ .form-label,
+.form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label {
+  top: -10px;
+  left: 10px;
+  font-size: 0.8em;
+  opacity: 1;
+  background-color: #fff;
+}
+
+.form-input:not(:placeholder-shown).form-input:not(:focus) {
+  background-color: transparent;
+  border: 1px solid #c5c4c4;
+}
+
+.form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-placeholder {
+  opacity: 0;
+}
+
+.form-input:focus ~ .form-placeholder {
+  display: none;
+}
+
+.message {
+  resize: none;
+  overflow: auto;
+}
+
+#continue,
+#edit,
+#confirm {
+  background-color: #35c0ed;
+  color: #062549;
+  font-size: 1.2em;
+  border: none;
+  outline: none;
+  width: 90%;
+  padding: 8px;
+  border-radius: 3px;
+  transition: background-color 200ms ease-in;
+}
+
+#edit {
+  width: 22%;
+  min-width: 60px;
+}
+
+#confirm {
+  width: 70%;
+}
+
+#continue:hover,
+#confirm:hover {
+  background-color: #9aeba6;
+}
+
+#edit:hover {
+  background-color: #eba69a;
+}
+
+/* Form when disabled */
+
+.disabled {
+  background-color: #f5f5f5 !important;
+}
+
+.form-label.disabled {
+  pointer-events: none;
+}
+
+.disabled:hover {
+  border: 1px solid #c5c4c4 !important;
+}
+
+#footer {
+  min-height: 10%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #9aeba6;
+}
+
+/* Mobile Version Tweaks  */
+
+#mobile-menu-button {
+  display: none;
+  font-size: 2em;
+  color: #062549;
+  text-align: center;
+  margin-right: 20px;
+}
+
+#mobile-menu-button:hover {
+  color: #35c0ed;
+}
+
+@media only screen and (max-width: 720px) {
+  #nav-bar-links {
+    display: none !important;
+  }
+
+  #nav-bar-links-mobile {
+    display: flex;
+    flex-direction: column;
+    position: inherit;
+    top: 66px;
+    background-color: #062549e7;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+  }
+
+  .nav-bar-link-mobile {
+    color: #f5f5f5;
+    padding: 15px;
+    letter-spacing: 5px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+  }
+
+  .nav-bar-link-mobile:hover {
+    color: #35c0ed;
+  }
+
+  #mobile-menu-button {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  figcaption {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 650px), (max-height: 600px) {
+  #home-main-logo {
+    padding-top: 40vh;
+  }
+
+  #home-footer {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact-form {
+    width: 90%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-inline: auto;
+  }
+}
+
+@media only screen and (max-width: 684px) {
+  .project-slide-c .project-description {
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .project-slide-c.current .project-description {
+    transform: translateY(-350px);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .double-field {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 23.5%;
+  }
+
+  .double-field .narrow-fields .form-error-message {
+    margin-block-end: 4%;
+  }
+
+  .narrow-fields {
+    width: 100%;
+  }
+
+  #contact {
+    min-height: 750px;
+  }
+
+  .contact-form {
+    min-height: 550px;
+  }
+
+  #form-confirm-buttons {
+    display: flex;
+    flex-direction: row;
+    min-height: fit-content;
+  }
 }

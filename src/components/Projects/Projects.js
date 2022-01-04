@@ -1,11 +1,11 @@
-import Slider from './Slider'
+import Slider from './Slider';
 
 const Projects = () => {
-    return (
-        <div id='projects'>
-            <Slider />
-        </div>
-    )
-}
+  return (
+    <div id='projects'>
+      <Slider />
+    </div>
+  );
+};
 
-export default Projects
+export default Projects;
