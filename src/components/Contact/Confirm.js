@@ -1,27 +1,63 @@
-import emailjs from '@emailjs/browser';
+// import emailjs from '@emailjs/browser';
 
-const Confirm = ({ nextStep, prevStep, values, step }) => {
+const Confirm = ({ nextStep, prevStep, values, step, errorStep }) => {
   const confirm = (e) => {
     e.preventDefault();
-    //Process Form Data
-    emailjs
-      .sendForm(
-        'service_nuzjt3l',
-        'contact-form-enquiry',
-        '#contact-form-2',
-        'user_CczRaHfx6domfy9fngDoo'
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    //Success Step
-    nextStep();
+
+    const data = {
+      service_id: 'service_nuzjt3l',
+      template_id: 'contact-form-enquiry',
+      user_id: 'user_CczRaHfx6domfy9fngDoo',
+      template_params: {
+        name: values.name,
+        email: values.email,
+        phoneNumber: values.phoneNumber,
+        postcode: values.postcode,
+        message: values.message,
+      },
+    };
+
+    fetch('https://api.emailjs.com/api/v1.0/email/send', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => {
+        console.log(`${response.status} ${response.statusText}`);
+        response.ok ? nextStep() : errorStep();
+      })
+      .catch((error) => {
+        console.log(`${error} ${error}`);
+        errorStep();
+      });
   };
+
+  //emailjs.sendForm method *!not working!*
+
+  // const confirm = (e) => {
+  //   e.preventDefault();
+  //   //Process Form Data
+  //   emailjs
+  //     .sendForm(
+  //       'service_nuzjt3l',
+  //       'contact-form-enquiry',
+  //       '#contact-form-2',
+  //       'user_CczRaHfx6domfy9fngDoo'
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+  //   //Success Step
+  //   nextStep();
+  // };
 
   const edit = (e) => {
     e.preventDefault();

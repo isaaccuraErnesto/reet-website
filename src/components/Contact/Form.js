@@ -178,7 +178,10 @@ const Form = ({ nextStep, handleChange, values, step }) => {
           <br />I was wondering...
         </label>
         {formErrors.message && (
-          <label htmlFor={`message-${step}`} className='form-error-message'>
+          <label
+            htmlFor={`message-${step}`}
+            className='form-error-message-textarea'
+          >
             {formErrors.message}
           </label>
         )}

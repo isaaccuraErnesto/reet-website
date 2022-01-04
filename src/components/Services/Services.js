@@ -9,17 +9,17 @@ const Services = () => {
         <h4>Roofing</h4>
         <hr style={{ width: '50%' }} />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-          blanditiis voluptas quo sunt maiores non molestias vel pariatur
-          inventore ipsam.
+          Roofs are our biggest defence against weather conditions. With over 10
+          years experience in the roof-plumbing sector, leave all your roofing
+          issues to us.
         </p>
         <hr style={{ width: '50%' }} />
         <ul>
-          <li>alsdalkdsj</li>
-          <li>asdasd</li>
-          <li>asdad asdasd</li>
-          <li>asdasdasd</li>
-          <li>asdasd asd</li>
+          <li>Gutters</li>
+          <li>Laser lights</li>
+          <li>Roof cleaning</li>
+          <li>Down pipes</li>
+          <li>Flashings</li>
         </ul>
       </div>
       <div id='services-carpentry' className='service-box'>
@@ -30,17 +30,17 @@ const Services = () => {
         <h4>Carpentry</h4>
         <hr style={{ width: '50%' }} />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-          blanditiis voluptas quo sunt maiores non molestias vel pariatur
-          inventore ipsam.
+          Let us tend to your carpentry needs. Whether you plan to build a brand
+          new deck or wish to to hang doors in your home, we will provide a
+          finish you will be proud of.
         </p>
         <hr style={{ width: '50%' }} />
         <ul>
-          <li>Lorem</li>
-          <li>Lorem</li>
-          <li>Lorem</li>
-          <li>Lorem</li>
-          <li>Lorem</li>
+          <li>Decks</li>
+          <li>Planter boxes</li>
+          <li>Weatherboards</li>
+          <li>Arcs and skirts</li>
+          <li>Fences</li>
         </ul>
       </div>
       <div id='services-renovations' className='service-box'>
@@ -51,17 +51,17 @@ const Services = () => {
         <h4>Renovations</h4>
         <hr style={{ width: '50%' }} />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-          blanditiis voluptas quo sunt maiores non molestias vel pariatur
-          inventore ipsam.
+          Need a new bathroom? Want to freshen up your kitchen or upgrade the
+          bedrooms? Realised you deserve a cinema room? Allow us to help you see
+          your reno through.
         </p>
         <hr style={{ width: '50%' }} />
         <ul>
-          <li>Lorem</li>
-          <li>Lorem</li>
-          <li>Lorem</li>
-          <li>Lorem</li>
-          <li>Lorem</li>
+          <li>Kitchen</li>
+          <li>Bathrooms</li>
+          <li>Outdoor areas</li>
+          <li>Living spaces</li>
+          <li>Bedrooms</li>
         </ul>
       </div>
       <div id='services-handyman' className='service-box'>
@@ -72,17 +72,17 @@ const Services = () => {
         <h4>Handyman</h4>
         <hr style={{ width: '50%' }} />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-          blanditiis voluptas quo sunt maiores non molestias vel pariatur
-          inventore ipsam.
+          As the saying goes, no job too big or too small. We are here to assist
+          with all your needs. Our handymen are friendly, professional, and
+          always up to the task.
         </p>
         <hr style={{ width: '50%' }} />
         <ul>
-          <li>Lorem</li>
-          <li>Lorem</li>
-          <li>Lorem</li>
-          <li>Lorem</li>
-          <li>Lorem</li>
+          <li>Tiling</li>
+          <li>Gardening</li>
+          <li>Furniture assembly</li>
+          <li>Lock repair</li>
+          <li>Painting</li>
         </ul>
       </div>
       <div id='services-maintenance' className='service-box'>
@@ -93,17 +93,17 @@ const Services = () => {
         <h4>Maintenance</h4>
         <hr style={{ width: '50%' }} />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-          blanditiis voluptas quo sunt maiores non molestias vel pariatur
-          inventore ipsam.
+          It is smarter to maintain your property than to do nothing and pay for
+          big repairs later. We offer all-round residential and commercial
+          building maintenance.
         </p>
         <hr style={{ width: '50%' }} />
         <ul>
-          <li>Lorem</li>
-          <li>Lorem</li>
-          <li>Lorem</li>
-          <li>Lorem</li>
-          <li>Lorem</li>
+          <li>Tap Leaks</li>
+          <li>Bi-annual checks</li>
+          <li>Bathroom regrouting</li>
+          <li>Fascia and gutters</li>
+          <li>Yearly checks</li>
         </ul>
       </div>
     </div>

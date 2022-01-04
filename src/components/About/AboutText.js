@@ -21,9 +21,9 @@ const AboutText = () => {
         our clients' needs.
         <br />
         <br />
-        Our aim is to provide a headache-free experience for all parts involved,
-        allowing our clients to spend more time enjoying the results of their
-        projects, regardless of magnitude or significance.
+        Our aim is to provide a headache-free experience for all parties
+        involved, allowing our clients to spend more time enjoying the results
+        of their projects, regardless of magnitude.
       </p>
     </div>
   );

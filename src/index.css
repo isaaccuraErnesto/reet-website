@@ -258,12 +258,13 @@ figcaption {
 
 .service-box {
   height: fit-content;
+  min-height: 595px;
   width: 280px;
   padding: 25px 40px 20px 40px;
   margin: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background: linear-gradient(#fff, #fff) padding-box,
     linear-gradient(90deg, #35c0ed, #9aeba6 50%, #35c0ed) border-box;
@@ -272,6 +273,10 @@ figcaption {
   border-bottom: 1px solid #c5c5c4;
   text-align: center;
   font-size: 0.9em;
+}
+
+.service-box p {
+  min-height: 151.2px;
 }
 
 .service-box ul {
@@ -392,10 +397,19 @@ figcaption {
 }
 
 .form-error-message {
+  position: absolute;
+  top: 5em;
+  left: 1em;
   font-size: 0.6em;
   color: #eba69a;
-  margin-inline-start: 1em;
-  margin-block-end: 1em;
+}
+
+.form-error-message-textarea {
+  position: absolute;
+  top: 10em;
+  left: 1em;
+  font-size: 0.6em;
+  color: #eba69a;
 }
 
 .form-input:focus ~ .form-label,

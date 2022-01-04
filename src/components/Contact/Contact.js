@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Form from './Form';
 import Confirm from './Confirm';
 import Success from './Success';
+import Error from './Error';
 
 const Contact = () => {
   const [step, setStep] = useState(1);
@@ -22,6 +23,11 @@ const Contact = () => {
   //Previous step
   const prevStep = () => {
     setStep(step - 1);
+  };
+
+  //Error step
+  const errorStep = () => {
+    setStep(4);
   };
 
   //Handle Input Change
@@ -51,12 +57,13 @@ const Contact = () => {
             prevStep={prevStep}
             values={fieldsValues}
             step={step}
+            errorStep={errorStep}
           />
         );
       case 3:
         return <Success values={fieldsValues} step={step} />;
       case 4:
-        return <h1>Error</h1>;
+        return <Error step={step} />;
       default:
         return <h1>Give us a call!</h1>;
     }
