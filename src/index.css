@@ -635,12 +635,11 @@ figcaption {
 
 /* Responsive Design Tweaks */
 
-/* @media only screen and (max-device-width: 1366px) {
-  #home,
+@media only screen and (max-device-width: 1366px) {
   #about {
     background-attachment: scroll;
   }
-} */
+}
 
 @media only screen and (max-width: 900px) {
   figcaption {
