@@ -21,14 +21,31 @@ html,
 }
 
 #home {
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
   height: 100%;
   min-height: 500px;
   width: 100%;
   overflow: hidden;
+}
+
+#home::before {
+  content: '';
+  position: fixed;
+  z-index: -1;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(245, 245, 245, 1),
+      rgba(245, 245, 245, 0)
+    ),
+    url('./img/WoodShavings.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #nav-bar {
@@ -110,6 +127,12 @@ figcaption {
 
 #about {
   background-color: #062549;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(6, 37, 73, 0.8),
+      rgba(6, 37, 73, 0.4)
+    ),
+    url('./img/AngleGrinder.jpg');
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -612,12 +635,12 @@ figcaption {
 
 /* Responsive Design Tweaks */
 
-@media only screen and (max-device-width: 1366px) {
+/* @media only screen and (max-device-width: 1366px) {
   #home,
   #about {
     background-attachment: scroll;
   }
-}
+} */
 
 @media only screen and (max-width: 900px) {
   figcaption {
