@@ -7,8 +7,9 @@ import ProjectFive from '../../img/MoodyRenovation.jpg';
 const SliderData = [
   {
     img: `${ProjectOne}`,
-    title: 'Project One',
-    description: 'This project blah blah blah',
+    title: 'Brunswick East, VIC',
+    description:
+      'Full kitchen renovation, including the installation of new fittings.',
   },
   {
     img: `${ProjectTwo}`,

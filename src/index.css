@@ -21,7 +21,7 @@ html,
 }
 
 #home {
-  height: 100vh;
+  height: 100%;
   min-height: 500px;
   width: 100%;
   overflow: hidden;
@@ -674,6 +674,15 @@ figcaption {
     left: 0;
     width: 100%;
     max-width: 100%;
+    padding: 10% 8%;
+  }
+
+  .project-slide-c .project-description h3 {
+    font-size: 110%;
+  }
+
+  .project-slide-c .project-description p {
+    font-size: 75%;
   }
 
   .project-slide-c.current .project-description {

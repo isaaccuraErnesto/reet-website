@@ -31,8 +31,8 @@ const Services = () => {
         <hr style={{ width: '50%' }} />
         <p>
           Let us tend to your carpentry needs. Whether you plan to build a brand
-          new deck or wish to to hang doors in your home, we will provide a
-          finish you will be proud of.
+          new deck or wish to hang doors in your home, we will provide a finish
+          you will be proud of.
         </p>
         <hr style={{ width: '50%' }} />
         <ul>
@@ -99,11 +99,11 @@ const Services = () => {
         </p>
         <hr style={{ width: '50%' }} />
         <ul>
-          <li>Tap Leaks</li>
+          <li>Yearly checks</li>
           <li>Bi-annual checks</li>
           <li>Bathroom regrouting</li>
           <li>Fascia and gutters</li>
-          <li>Yearly checks</li>
+          <li>Tap Leaks</li>
         </ul>
       </div>
     </div>
