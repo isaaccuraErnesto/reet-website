@@ -604,6 +604,13 @@ figcaption {
 
 /* Responsive Design Tweaks */
 
+@media only screen and (max-device-width: 1366px) {
+  #home,
+  #about {
+    background-attachment: scroll;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   figcaption {
     display: none !important;
@@ -682,7 +689,7 @@ figcaption {
   }
 
   .project-slide-c .project-description p {
-    font-size: 75%;
+    font-size: 85%;
   }
 
   .project-slide-c.current .project-description {
