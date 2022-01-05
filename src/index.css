@@ -21,6 +21,10 @@ html,
 }
 
 #home {
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
   min-height: 500px;
   width: 100%;
@@ -106,6 +110,10 @@ figcaption {
 
 #about {
   background-color: #062549;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100%;
   position: relative;
   padding: 9% 0;

@@ -7,10 +7,6 @@ const Home = ({ background, logo }) => {
       id='home'
       style={{
         backgroundImage: `linear-gradient(to bottom, rgba(245, 245, 245, 1), rgba(245, 245, 245, 0)), url(${background})`,
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
       }}
     >
       <Navbar logo={logo} />
