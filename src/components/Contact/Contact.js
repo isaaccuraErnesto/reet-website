@@ -3,6 +3,7 @@ import Form from './Form';
 import Confirm from './Confirm';
 import Success from './Success';
 import Error from './Error';
+import ContactDetails from './ContactDetails';
 
 const Contact = () => {
   const [step, setStep] = useState(1);
@@ -69,7 +70,12 @@ const Contact = () => {
     }
   };
 
-  return <div id='contact'>{renderSwitch(step)}</div>;
+  return (
+    <div id='contact'>
+      {renderSwitch(step)}
+      <ContactDetails />
+    </div>
+  );
 };
 
 export default Contact;

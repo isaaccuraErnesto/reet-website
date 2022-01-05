@@ -15,7 +15,7 @@ const NavBar = ({ logo }) => {
       id='nav-bar'
       className='d-flex justify-content-between align-items-center'
     >
-      <ReetLogo logo={logo} />
+      <ReetLogo logo={logo} id='logo-button' section='#home' />
       <MobileMenu clickStatus={clickStatus} handleClick={handleClick} />
       <NavBarButtons clickStatus={clickStatus} />
     </nav>
