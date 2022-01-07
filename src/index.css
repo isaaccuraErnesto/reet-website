@@ -674,6 +674,28 @@ figcaption {
   .arrow {
     display: initial;
   }
+
+  .project-slide-c {
+    width: 100%;
+    left: 0;
+  }
+
+  .project-slide-l {
+    width: 100%;
+    left: -100%;
+  }
+
+  .project-slide-r {
+    width: 100%;
+    right: -100%;
+  }
+
+  .project-slide-c .project-description {
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    text-align: initial;
+  }
 }
 
 @media only screen and (max-width: 900px) {
