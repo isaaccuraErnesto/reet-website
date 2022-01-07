@@ -1,5 +1,6 @@
 import Navbar from './NavBar';
 import HomeFooter from './HomeFooter';
+import AnimatedArrow from './AnimatedArrow';
 
 const Home = ({ logo }) => {
   return (
@@ -13,6 +14,7 @@ const Home = ({ logo }) => {
         />
       </div>
       <HomeFooter />
+      <AnimatedArrow />
     </div>
   );
 };

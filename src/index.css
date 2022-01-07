@@ -21,29 +21,18 @@ html,
 }
 
 #home {
-  position: relative;
   height: 100%;
   min-height: 500px;
   width: 100%;
   overflow: hidden;
-}
-
-#home::before {
-  content: '';
-  position: fixed;
-  z-index: -1;
-  display: block;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   background-image: linear-gradient(
       to bottom,
       rgba(245, 245, 245, 1),
       rgba(245, 245, 245, 0)
     ),
     url('./img/WoodShavings.png');
-  background-position: center top;
+  background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -123,6 +112,43 @@ figcaption {
 .fa-circle {
   color: transparent;
   -webkit-text-stroke: 3px #8d8b8b !important;
+}
+
+.arrow {
+  display: none;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.arrow span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid #9aeba6;
+  border-right: 5px solid #9aeba6;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+.arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+.arrow span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
 }
 
 #about {
@@ -636,8 +662,17 @@ figcaption {
 /* Responsive Design Tweaks */
 
 @media only screen and (max-device-width: 1366px) {
+  #home,
   #about {
     background-attachment: scroll;
+  }
+
+  #home-main-logo {
+    padding-top: 28vh !important;
+  }
+
+  .arrow {
+    display: initial;
   }
 }
 
