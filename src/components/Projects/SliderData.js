@@ -1,8 +1,8 @@
-import ProjectOne from '../../img/Woodwork.jpg';
-import ProjectTwo from '../../img/WhiteTimber.jpg';
-import ProjectThree from '../../img/WoodChips.jpg';
-import ProjectFour from '../../img/Renovation.jpg';
-import ProjectFive from '../../img/MoodyRenovation.jpg';
+import ProjectOne from '../../img/KitchenRenovation.jpg';
+import ProjectTwo from '../../img/RoofJob.jpg';
+import ProjectThree from '../../img/ColorbondRoof.jpg';
+import ProjectFour from '../../img/TimberDeck.jpg';
+import ProjectFive from '../../img/BathroomRenovation.jpg';
 
 const SliderData = [
   {
@@ -13,23 +13,25 @@ const SliderData = [
   },
   {
     img: `${ProjectTwo}`,
-    title: 'Project Two',
-    description: 'This project blah blah blah',
+    title: 'Hawthorn, VIC',
+    description:
+      'Roof leak detected and repaired externally. Old patch cut out, mould treated and finished to perfection.',
   },
   {
     img: `${ProjectThree}`,
-    title: 'Project Three',
-    description: 'This project blah blah blah',
+    title: 'Richmond, VIC',
+    description: 'COLORBOND® roof installed on stunning house.',
   },
   {
     img: `${ProjectFour}`,
-    title: 'Project Four',
-    description: 'This project blah blah blah',
+    title: 'Reservoir, VIC',
+    description: 'Residential timber deck built in seasoned pine.',
   },
   {
     img: `${ProjectFive}`,
-    title: 'Project Five',
-    description: 'This project blah blah blah',
+    title: 'Geelong, VIC',
+    description:
+      'Bathroom renovation, including tiling and hydronic floor heating installation.',
   },
 ];
 
