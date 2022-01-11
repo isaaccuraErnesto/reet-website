@@ -10,7 +10,7 @@ const Home = ({ logo }) => {
         <img
           className='img-fluid'
           src={logo}
-          alt='Reet Property Services Company Logo'
+          alt='Reet Property Services Company Logo - A Coffs Harbour local company offering quality at affordable rates.'
         />
       </div>
       <HomeFooter />

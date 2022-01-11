@@ -31,10 +31,10 @@ const AboutText = () => {
         of their projects, regardless of magnitude.
         <br />
         <br />
-        We are a small business with big ideas and want to deliver long lasting,
-        quality projects for our clients. Servicing Coffs Harbour and surrounds,
-        we wish to improve local home and business standards. Please contact us
-        for a free quote.
+        We are a small local business with big ideas and want to deliver long
+        lasting, quality projects for our clients. Servicing Coffs Harbour and
+        surrounds, we wish to improve local home and business standards. Please
+        contact us for a free quote.
       </p>
     </div>
   );

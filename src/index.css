@@ -51,12 +51,14 @@ html,
   margin-inline-start: 20px;
 }
 
-#nav-bar-links {
+#nav-bar-links,
+#nav-bar-links-mobile {
   width: 500px;
   margin-right: 10px;
 }
 
-.nav-bar-link {
+.nav-bar-link,
+.nav-bar-link-mobile {
   display: block;
   text-decoration: none;
   text-align: center;
@@ -64,7 +66,8 @@ html,
   width: 90px;
 }
 
-.nav-bar-link:hover {
+.nav-bar-link:hover,
+.nav-bar-link-mobile:hover {
   color: #35c0ed;
 }
 

@@ -17,7 +17,7 @@ const NavBar = ({ logo }) => {
     >
       <ReetLogo logo={logo} id='logo-button' section='#home' />
       <MobileMenu clickStatus={clickStatus} handleClick={handleClick} />
-      <NavBarButtons clickStatus={clickStatus} />
+      <NavBarButtons clickStatus={clickStatus} handleClick={handleClick} />
     </nav>
   );
 };
