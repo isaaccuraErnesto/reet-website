@@ -47,7 +47,8 @@ html,
 }
 
 #nav-bar-logo {
-  width: 170px;
+  width: 150px;
+  margin-inline-start: 20px;
 }
 
 #nav-bar-links {
@@ -68,8 +69,8 @@ html,
 }
 
 #home-main-logo {
-  width: fit-content;
-  height: fit-content;
+  width: 45vw;
+  min-width: 400px;
   margin: auto;
   padding-top: 25vh;
 }
@@ -220,7 +221,7 @@ figcaption {
   width: 60%;
   opacity: 0;
   transition: opacity 2s ease-in-out;
-  background-position: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
   left: -40%;
@@ -668,7 +669,10 @@ figcaption {
   }
 
   #home-main-logo {
-    padding-top: 28vh !important;
+    width: 80vw;
+    min-width: initial;
+    margin: auto;
+    padding-top: 30vh !important;
   }
 
   .arrow {
@@ -795,6 +799,7 @@ figcaption {
     align-items: center;
     padding-inline: 5%;
     padding-block: 5px;
+    font-size: 90%;
   }
 
   #footer div {
@@ -860,5 +865,11 @@ figcaption {
 
   #footer {
     font-size: 70%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  #footer-logo-button {
+    display: none;
   }
 }

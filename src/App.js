@@ -4,7 +4,8 @@ import Projects from './components/Projects/Projects';
 import Services from './components/Services/Services';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
-import ReetLogo from './img/ReetLogo.png';
+import ReetLogo from './img/ReetLogo.svg';
+import ReetLogoBlack from './img/ReetLogoBlack.svg';
 
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
       <Projects />
       <Services />
       <Contact />
-      <Footer />
+      <Footer logo={ReetLogoBlack} />
     </div>
   );
 };

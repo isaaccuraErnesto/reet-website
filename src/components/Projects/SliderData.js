@@ -1,37 +1,57 @@
 import ProjectOne from '../../img/KitchenRenovation.jpg';
-import ProjectTwo from '../../img/RoofJob.jpg';
-import ProjectThree from '../../img/ColorbondRoof.jpg';
-import ProjectFour from '../../img/TimberDeck.jpg';
-import ProjectFive from '../../img/BathroomRenovation.jpg';
+import ProjectTwo from '../../img/SchoolMaintenance.jpg';
+import ProjectThree from '../../img/ShopFitOut.jpg';
+import ProjectFour from '../../img/ColorbondRoof.jpg';
+import ProjectFive from '../../img/BedroomRenovation.jpg';
+import ProjectSix from '../../img/ShopDisplay.jpg';
+import ProjectSeven from '../../img/SunroomRenovation.jpg';
+import ProjectEight from '../../img/MerbauDeck.jpg';
 
 const SliderData = [
   {
     img: `${ProjectOne}`,
-    title: 'Brunswick East, VIC',
+    title: 'Kitchen Makeover',
     description:
-      'Full kitchen renovation, including the installation of new fittings.',
+      'Full kitchen renovation, including the installation of new cabinetry, sink, designer splashback tiles and canopy.',
   },
   {
     img: `${ProjectTwo}`,
-    title: 'Hawthorn, VIC',
-    description:
-      'Roof leak detected and repaired externally. Old patch cut out, mould treated and finished to perfection.',
+    title: 'Roof Cleanup',
+    description: 'Roof and general maintenance at school grounds.',
   },
   {
     img: `${ProjectThree}`,
-    title: 'Richmond, VIC',
-    description: 'COLORBOND® roof installed on stunning house.',
+    title: 'Shop Fit Out',
+    description:
+      'Blank canvas turned into a modern AFL store. Stud walls and columns framed, plastered and slat panels installed.',
   },
   {
     img: `${ProjectFour}`,
-    title: 'Reservoir, VIC',
-    description: 'Residential timber deck built in seasoned pine.',
+    title: 'Roof Install',
+    description: 'COLORBOND® roof installed on stunning house.',
   },
   {
     img: `${ProjectFive}`,
-    title: 'Geelong, VIC',
+    title: 'Bedroom Revamp',
     description:
-      'Bathroom renovation, including tiling and hydronic floor heating installation.',
+      'Kids bedroom renovation. New skirting boards and a fresh paint job gave this room a brand new face.',
+  },
+  {
+    img: `${ProjectSix}`,
+    title: 'Retail Emergency',
+    description: 'Broken checkout desk repaired within the hour.',
+  },
+  {
+    img: `${ProjectSeven}`,
+    title: 'Lounge Away',
+    description:
+      'Sun room modernised. New tiles and a fresh paint job made this room a weekend favourite.',
+  },
+  {
+    img: `${ProjectEight}`,
+    title: 'Summer Ready',
+    description:
+      'Merbau decking fitted around garden with a raised platform for chilling or entertaining.',
   },
 ];
 

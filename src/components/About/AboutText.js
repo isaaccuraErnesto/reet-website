@@ -21,9 +21,20 @@ const AboutText = () => {
         our clients' needs.
         <br />
         <br />
+        With over 18 years experience in the construction and property service
+        industry, at Reet we have the skill set to turn your projects into
+        realities.
+        <br />
+        <br />
         Our aim is to provide a headache-free experience for all parties
         involved, allowing our clients to spend more time enjoying the results
         of their projects, regardless of magnitude.
+        <br />
+        <br />
+        We are a small business with big ideas and want to deliver long lasting,
+        quality projects for our clients. Servicing Coffs Harbour and surrounds,
+        we wish to improve local home and business standards. Please contact us
+        for a free quote.
       </p>
     </div>
   );
