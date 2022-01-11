@@ -603,6 +603,7 @@ figcaption {
   align-items: center;
   padding-inline: 5%;
   padding-block: 5px;
+  font-size: 85%;
 }
 
 #footer a {
@@ -799,7 +800,6 @@ figcaption {
     align-items: center;
     padding-inline: 5%;
     padding-block: 5px;
-    font-size: 90%;
   }
 
   #footer div {
