@@ -15,7 +15,8 @@ const ContactDetails = () => {
       ></div>
       <div id='contact-details'>
         <div id='contact-details-phone-number'>
-          <i className='fas fa-mobile-alt'></i>0413 777 667
+          <i className='fas fa-mobile-alt'></i>
+          <a href='tel:0413777667'>0413 777 667</a>
         </div>
         <div id='contact-details-email-address'>
           <i className='far fa-envelope'></i>
