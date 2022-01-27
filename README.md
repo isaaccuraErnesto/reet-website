@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Reet Property Services Website
+by ernestoIsaaccura
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**[LIVE VERSION](https://www.reetpropertyservices.com.au/)**
 
-## Available Scripts
+## About
 
-In the project directory, you can run:
+Landing website designed for a business launch in the property services and property maintenance industry.
 
-### `npm start`
+The website features:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- A 100% 'from-scratch' React build
+- A fully responsive one-pager design
+- A multi-step contact form with authentication
+- A scalable image slider to showcase the company's projects
+- A mobile 'hamburger' menu
+- A colour theme based on the company's branding
+- A sleek, clean, and modern design
+- CSS-animated elements
+- Optimised sharing for Facebook and Twitter
+- Great performance, accessibility, and SEO metrics
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The site was built using a combination of the following languages/libraries/frameworks:
 
-### `npm test`
+- React
+- EmailJS
+- Bootstrap
+- JavaScript
+- CSS
+- HTML
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots
 
-### `npm run build`
+### PC View
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Home
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Reet Home](https://i.imgur.com/aQlDA11.jpg "Reet Home")
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### About
 
-### `npm run eject`
+![Reet About]( "Reet About")
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Projects
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Reet Projects]( "Reet Projects")
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### Services
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![Reet Services]( "Reet Services")
 
-## Learn More
+#### Contact
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+##### Contact Form Details Entry Step
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Reet Contact Details]( "Reet Contact Details")
 
-### Code Splitting
+##### Contact Form Details Authentication
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Reet Contact Authentication]( "Reet Contact Authentication")
 
-### Analyzing the Bundle Size
+##### Contact Form Details Confirmation Step
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Reet Contact Confirm]( "Reet Contact Confirm")
 
-### Making a Progressive Web App
+##### Contact Form Details Success Step
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![Reet Contact Success]( "Reet Contact Success")
 
-### Advanced Configuration
+##### Contact Form Details Error Step
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![Reet Contact Error]( "Reet Contact Error")
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Mobile View
