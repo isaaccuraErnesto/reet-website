@@ -1,4 +1,4 @@
-import HomeFooterIcon from './HomeFooterIcon';
+import HomeFooterIcon from './HomeFooterIcon'
 
 const HomeFooterIcons = () => {
   return (
@@ -32,7 +32,7 @@ const HomeFooterIcons = () => {
         caption='Maintenance'
       />
     </div>
-  );
-};
+  )
+}
 
-export default HomeFooterIcons;
+export default HomeFooterIcons

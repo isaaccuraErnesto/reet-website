@@ -1,60 +1,58 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 
 const Form = ({ nextStep, handleChange, values, step }) => {
-  const [formErrors, setFormErrors] = useState({});
-  const [continueClicked, setContinueClicked] = useState(false);
+  const [formErrors, setFormErrors] = useState({})
+  const [continueClicked, setContinueClicked] = useState(false)
 
   const checkErrors = () => {
-    setFormErrors(validate(values));
-  };
+    setFormErrors(validate(values))
+  }
 
   useEffect(() => {
-    console.log(formErrors);
     if (Object.keys(formErrors).length === 0 && continueClicked) {
-      nextStep();
-      console.log(values);
+      nextStep()
     }
-  }, [formErrors, continueClicked, values, nextStep]);
+  }, [formErrors, continueClicked, values, nextStep])
 
   const validate = (values) => {
-    const errors = {};
-    const nameRegex = /^[a-z ,.'-]+$/i;
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    const errors = {}
+    const nameRegex = /^[a-z ,.'-]+$/i
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i
     const phoneNumberRegex =
-      /^(\+?\(61\)|\(\+?61\)|\+?61|\(0[1-9]\)|0[1-9])?( ?-?[0-9]){7,9}$/;
-    const postcodeRegex = /^[0-9]{4}$/;
+      /^(\+?\(61\)|\(\+?61\)|\+?61|\(0[1-9]\)|0[1-9])?( ?-?[0-9]){7,9}$/
+    const postcodeRegex = /^[0-9]{4}$/
 
     if (!values.name) {
-      errors.name = 'Please enter your name';
+      errors.name = 'Please enter your name'
     } else if (values.name.length < 2 || !nameRegex.test(values.name)) {
-      errors.name = 'Please enter a valid name';
+      errors.name = 'Please enter a valid name'
     }
     if (!values.email) {
-      errors.email = 'Please enter your email address';
+      errors.email = 'Please enter your email address'
     } else if (!emailRegex.test(values.email)) {
-      errors.email = 'Please enter a valid email address';
+      errors.email = 'Please enter a valid email address'
     }
     if (!values.phoneNumber) {
-      errors.phoneNumber = 'Please enter your phone number';
+      errors.phoneNumber = 'Please enter your phone number'
     } else if (!phoneNumberRegex.test(values.phoneNumber)) {
-      errors.phoneNumber = 'Please enter a valid phone number';
+      errors.phoneNumber = 'Please enter a valid phone number'
     }
     if (!values.postcode) {
-      errors.postcode = 'Please enter your postcode';
+      errors.postcode = 'Please enter your postcode'
     } else if (!postcodeRegex.test(values.postcode)) {
-      errors.postcode = 'Please enter a valid postcode';
+      errors.postcode = 'Please enter a valid postcode'
     }
     if (!values.message) {
-      errors.message = 'Please tell us what your enquiry is about';
+      errors.message = 'Please tell us what your enquiry is about'
     }
-    return errors;
-  };
+    return errors
+  }
 
   const proceed = (e) => {
-    e.preventDefault();
-    setContinueClicked(true);
-    checkErrors();
-  };
+    e.preventDefault()
+    setContinueClicked(true)
+    checkErrors()
+  }
 
   return (
     <form id={`contact-form-${step}`} className='contact-form'>
@@ -195,7 +193,7 @@ const Form = ({ nextStep, handleChange, values, step }) => {
         Continue
       </button>
     </form>
-  );
-};
+  )
+}
 
-export default Form;
+export default Form

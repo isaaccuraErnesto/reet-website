@@ -9,7 +9,7 @@ const ReetLogo = ({ logo, id, section }) => {
         />
       </a>
     </div>
-  );
-};
+  )
+}
 
-export default ReetLogo;
+export default ReetLogo

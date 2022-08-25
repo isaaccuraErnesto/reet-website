@@ -3,7 +3,7 @@ const MobileMenu = ({ handleClick, clickStatus }) => {
     <div id='mobile-menu-button' onClick={handleClick}>
       <i className={clickStatus ? 'fas fa-times' : 'fas fa-bars'}></i>
     </div>
-  );
-};
+  )
+}
 
-export default MobileMenu;
+export default MobileMenu

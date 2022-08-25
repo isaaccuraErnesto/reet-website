@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import Form from './Form';
-import Confirm from './Confirm';
-import Success from './Success';
-import Error from './Error';
-import ContactDetails from './ContactDetails';
+import React, { useState } from 'react'
+import Form from './Form'
+import Confirm from './Confirm'
+import Success from './Success'
+import Error from './Error'
+import ContactDetails from './ContactDetails'
 
 const Contact = () => {
-  const [step, setStep] = useState(1);
+  const [step, setStep] = useState(1)
 
   const [fieldsValues, setFieldsValues] = useState({
     name: '',
@@ -14,31 +14,31 @@ const Contact = () => {
     phoneNumber: '',
     postcode: '',
     message: '',
-  });
+  })
 
   //Next step
   const nextStep = () => {
-    setStep(step + 1);
-  };
+    setStep(step + 1)
+  }
 
   //Previous step
   const prevStep = () => {
-    setStep(step - 1);
-  };
+    setStep(step - 1)
+  }
 
   //Error step
   const errorStep = () => {
-    setStep(4);
-  };
+    setStep(4)
+  }
 
   //Handle Input Change
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value } = e.target
     setFieldsValues((prevState) => ({
       ...prevState,
       [name]: value,
-    }));
-  };
+    }))
+  }
 
   const renderSwitch = (step) => {
     switch (step) {
@@ -50,7 +50,7 @@ const Contact = () => {
             values={fieldsValues}
             step={step}
           />
-        );
+        )
       case 2:
         return (
           <Confirm
@@ -60,22 +60,22 @@ const Contact = () => {
             step={step}
             errorStep={errorStep}
           />
-        );
+        )
       case 3:
-        return <Success values={fieldsValues} step={step} />;
+        return <Success values={fieldsValues} step={step} />
       case 4:
-        return <Error step={step} />;
+        return <Error step={step} />
       default:
-        return <h1>Give us a call!</h1>;
+        return <h1>Give us a call!</h1>
     }
-  };
+  }
 
   return (
     <div id='contact'>
       {renderSwitch(step)}
       <ContactDetails />
     </div>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

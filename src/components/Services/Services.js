@@ -51,7 +51,7 @@ const Services = () => {
         <h4>Renovations</h4>
         <hr style={{ width: '50%' }} />
         <p>
-          Need a new bathroom? Want to freshen up your kitchen or upgrade the
+          Want to freshen up your kitchen or upgrade the
           bedrooms? Realised you deserve a cinema room? Allow us to help you see
           your reno through.
         </p>
@@ -107,7 +107,7 @@ const Services = () => {
         </ul>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Services;
+export default Services

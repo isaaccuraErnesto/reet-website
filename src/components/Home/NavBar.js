@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import NavBarButtons from './NavBarButtons';
-import ReetLogo from './ReetLogo';
-import MobileMenu from './MobileMenu';
+import React, { useState } from 'react'
+import NavBarButtons from './NavBarButtons'
+import ReetLogo from './ReetLogo'
+import MobileMenu from './MobileMenu'
 
 const NavBar = ({ logo }) => {
-  const [clickStatus, setClickStatus] = useState(false);
+  const [clickStatus, setClickStatus] = useState(false)
 
   const handleClick = () => {
-    setClickStatus(!clickStatus);
-  };
+    setClickStatus(!clickStatus)
+  }
 
   return (
     <nav
@@ -19,7 +19,7 @@ const NavBar = ({ logo }) => {
       <MobileMenu clickStatus={clickStatus} handleClick={handleClick} />
       <NavBarButtons clickStatus={clickStatus} handleClick={handleClick} />
     </nav>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar

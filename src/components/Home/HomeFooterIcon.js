@@ -12,7 +12,7 @@ const HomeFooterIcon = ({ id, BootstrapClassName, caption }) => {
         <figcaption className='row'>{caption}</figcaption>
       </figure>
     </div>
-  );
-};
+  )
+}
 
-export default HomeFooterIcon;
+export default HomeFooterIcon

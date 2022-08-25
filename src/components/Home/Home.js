@@ -1,6 +1,6 @@
-import Navbar from './NavBar';
-import HomeFooter from './HomeFooter';
-import AnimatedArrow from './AnimatedArrow';
+import Navbar from './NavBar'
+import HomeFooter from './HomeFooter'
+import AnimatedArrow from './AnimatedArrow'
 
 const Home = ({ logo }) => {
   return (
@@ -10,13 +10,13 @@ const Home = ({ logo }) => {
         <img
           className='img-fluid'
           src={logo}
-          alt='Reet Property Services Company Logo - A Coffs Harbour local company offering quality at affordable rates.'
+          alt='Reet Property Services Company Logo - A Port Macquarie local company offering quality service at affordable rates.'
         />
       </div>
       <HomeFooter />
       <AnimatedArrow />
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

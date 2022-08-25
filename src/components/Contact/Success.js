@@ -26,7 +26,7 @@ const Success = ({ values, step }) => {
         </p>
       </form>
     </div>
-  );
-};
+  )
+}
 
-export default Success;
+export default Success

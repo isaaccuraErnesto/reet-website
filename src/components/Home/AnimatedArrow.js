@@ -1,25 +1,21 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 
 const AnimatedArrow = () => {
-  const [opacity, setOpacity] = useState(1);
+  const [opacity, setOpacity] = useState(1)
 
   useEffect(() => {
-    console.log(opacity);
     if (typeof window !== 'undefined') {
       window.onscroll = () => {
-        let currentScrollPos = window.pageYOffset;
-        let maxScroll = document.body.scrollHeight - window.innerHeight;
-        console.log(maxScroll);
+        let currentScrollPos = window.pageYOffset
+        let maxScroll = document.body.scrollHeight - window.innerHeight
         if (currentScrollPos > 0 && currentScrollPos <= maxScroll) {
-          setOpacity(0);
-          console.log(currentScrollPos);
+          setOpacity(0)
         } else {
-          setOpacity(1);
+          setOpacity(1)
         }
-      };
+      }
     }
-    console.log(opacity);
-  }, [opacity]);
+  }, [opacity])
 
   return (
     <div
@@ -30,7 +26,7 @@ const AnimatedArrow = () => {
       <span></span>
       <span></span>
     </div>
-  );
-};
+  )
+}
 
-export default AnimatedArrow;
+export default AnimatedArrow

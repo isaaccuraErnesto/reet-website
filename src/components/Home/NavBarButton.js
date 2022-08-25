@@ -8,7 +8,7 @@ const NavBarButton = ({ id, text, section, clickStatus, handleClick }) => {
     >
       {text}
     </a>
-  );
-};
+  )
+}
 
-export default NavBarButton;
+export default NavBarButton

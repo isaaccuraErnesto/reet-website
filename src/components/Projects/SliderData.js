@@ -1,11 +1,11 @@
-import ProjectOne from '../../img/KitchenRenovation.jpg';
-import ProjectTwo from '../../img/SchoolMaintenance.jpg';
-import ProjectThree from '../../img/ShopFitOut.jpg';
-import ProjectFour from '../../img/ColorbondRoof.jpg';
-import ProjectFive from '../../img/BedroomRenovation.jpg';
-import ProjectSix from '../../img/ShopDisplay.jpg';
-import ProjectSeven from '../../img/SunroomRenovation.jpg';
-import ProjectEight from '../../img/MerbauDeck.jpg';
+import ProjectOne from '../../img/KitchenRenovation.jpg'
+import ProjectTwo from '../../img/SchoolMaintenance.jpg'
+import ProjectThree from '../../img/ShopFitOut.jpg'
+import ProjectFour from '../../img/ColorbondRoof.jpg'
+import ProjectFive from '../../img/BedroomRenovation.jpg'
+import ProjectSix from '../../img/ShopDisplay.jpg'
+import ProjectSeven from '../../img/SunroomRenovation.jpg'
+import ProjectEight from '../../img/MerbauDeck.jpg'
 
 const SliderData = [
   {
@@ -53,6 +53,6 @@ const SliderData = [
     description:
       'Merbau decking fitted around garden with a raised platform for chilling or entertaining.',
   },
-];
+]
 
-export default SliderData;
+export default SliderData

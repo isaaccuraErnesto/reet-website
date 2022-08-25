@@ -1,26 +1,26 @@
-import React, { useState } from 'react';
-import SliderData from './SliderData';
+import React, { useState } from 'react'
+import SliderData from './SliderData'
 
 const Slider = () => {
-  const [centralSlide, setCentralSlide] = useState(0);
+  const [centralSlide, setCentralSlide] = useState(0)
 
   const prevProject = () => {
     if (centralSlide === 0) {
-      setCentralSlide(SliderData.length - 1);
-    } else setCentralSlide(centralSlide - 1);
-  };
+      setCentralSlide(SliderData.length - 1)
+    } else setCentralSlide(centralSlide - 1)
+  }
 
   const nextProject = () => {
     if (centralSlide === SliderData.length - 1) {
-      setCentralSlide(0);
-    } else setCentralSlide(centralSlide + 1);
-  };
+      setCentralSlide(0)
+    } else setCentralSlide(centralSlide + 1)
+  }
 
   return (
     <div id='slider'>
       {SliderData.map((project, index) => {
         return (
-          <div id='slides-container'>
+          <div id='slides-container' key={index}>
             <div
               className={
                 index === centralSlide
@@ -49,13 +49,12 @@ const Slider = () => {
                   : 'project-slide-l'
               }
               style={{
-                backgroundImage: `url(${
-                  SliderData[
-                    centralSlide === 0
-                      ? SliderData.length - 1
-                      : centralSlide - 1
-                  ].img
-                })`,
+                backgroundImage: `url(${SliderData[
+                  centralSlide === 0
+                    ? SliderData.length - 1
+                    : centralSlide - 1
+                ].img
+                  })`,
               }}
             ></div>
             <div
@@ -65,17 +64,16 @@ const Slider = () => {
                   : 'project-slide-r'
               }
               style={{
-                backgroundImage: `url(${
-                  SliderData[
-                    centralSlide === SliderData.length - 1
-                      ? 0
-                      : centralSlide + 1
-                  ].img
-                })`,
+                backgroundImage: `url(${SliderData[
+                  centralSlide === SliderData.length - 1
+                    ? 0
+                    : centralSlide + 1
+                ].img
+                  })`,
               }}
             ></div>
           </div>
-        );
+        )
       })}
 
       <div className='arrow-buttons'>
@@ -87,7 +85,7 @@ const Slider = () => {
         </button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Slider;
+export default Slider

@@ -32,12 +32,12 @@ const AboutText = () => {
         <br />
         <br />
         We are a small local business with big ideas and want to deliver long
-        lasting, quality projects for our clients. Servicing Coffs Harbour and
+        lasting, quality projects for our clients. Servicing Port Macquarie and
         surrounds, we wish to improve local home and business standards. Please
         contact us for a free quote.
       </p>
     </div>
-  );
-};
+  )
+}
 
-export default AboutText;
+export default AboutText

@@ -2,7 +2,7 @@
 
 const Confirm = ({ nextStep, prevStep, values, step, errorStep }) => {
   const confirm = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     const data = {
       service_id: 'service_250kjte',
@@ -15,7 +15,7 @@ const Confirm = ({ nextStep, prevStep, values, step, errorStep }) => {
         postcode: values.postcode,
         message: values.message,
       },
-    };
+    }
 
     fetch('https://api.emailjs.com/api/v1.0/email/send', {
       method: 'POST',
@@ -26,43 +26,18 @@ const Confirm = ({ nextStep, prevStep, values, step, errorStep }) => {
       body: JSON.stringify(data),
     })
       .then((response) => {
-        console.log(`${response.status} ${response.statusText}`);
-        response.ok ? nextStep() : errorStep();
+        response.ok ? nextStep() : errorStep()
       })
       .catch((error) => {
-        console.log(`${error} ${error}`);
-        errorStep();
-      });
-  };
-
-  //emailjs.sendForm method *!not working!*
-
-  // const confirm = (e) => {
-  //   e.preventDefault();
-  //   //Process Form Data
-  //   emailjs
-  //     .sendForm(
-  //       'service_nuzjt3l',
-  //       'contact-form-enquiry',
-  //       '#contact-form-2',
-  //       'user_CczRaHfx6domfy9fngDoo'
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  //   //Success Step
-  //   nextStep();
-  // };
+        console.error('error', error)
+        errorStep()
+      })
+  }
 
   const edit = (e) => {
-    e.preventDefault();
-    prevStep();
-  };
+    e.preventDefault()
+    prevStep()
+  }
 
   return (
     <form
@@ -160,7 +135,7 @@ const Confirm = ({ nextStep, prevStep, values, step, errorStep }) => {
         </button>
       </div>
     </form>
-  );
-};
+  )
+}
 
-export default Confirm;
+export default Confirm

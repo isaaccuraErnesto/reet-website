@@ -1,4 +1,4 @@
-import MapShot from '../../img/CoffsHarbourMapShot.jpg';
+import MapShot from '../../img/PortMacquarieMapShot.png'
 
 const ContactDetails = () => {
   return (
@@ -23,8 +23,15 @@ const ContactDetails = () => {
           info@reetpropertyservices.com.au
         </div>
       </div>
+      <div id='social-media'>
+        <span id='social-media-message'>Follow us on social media</span>
+        <div id='social-media-buttons'>
+          <a id='social-media-instagram' className='social-media-button' href='https://www.instagram.com/reetpropertyservices/' target='_blank' rel="noreferrer"><i className="fa-brands fa-instagram"></i> Instagram</a>
+          <a id='social-media-facebook' className='social-media-button' href='https://www.facebook.com/REET-Property-Services-111784514968619' target='_blank' rel="noreferrer"><i className="fa-brands fa-facebook"></i> Facebook</a>
+        </div>
+      </div>
     </div>
-  );
-};
+  )
+}
 
-export default ContactDetails;
+export default ContactDetails

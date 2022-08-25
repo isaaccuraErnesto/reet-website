@@ -25,11 +25,9 @@ html,
   min-height: 500px;
   width: 100%;
   overflow: hidden;
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(245, 245, 245, 1),
-      rgba(245, 245, 245, 0)
-    ),
+      rgba(245, 245, 245, 0)),
     url('./img/WoodShavings.jpg');
   background-position: center;
   background-attachment: fixed;
@@ -125,6 +123,7 @@ figcaption {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .arrow span {
   display: block;
   width: 30px;
@@ -135,20 +134,25 @@ figcaption {
   margin: -10px;
   animation: animate 2s infinite;
 }
+
 .arrow span:nth-child(2) {
   animation-delay: -0.2s;
 }
+
 .arrow span:nth-child(3) {
   animation-delay: -0.4s;
 }
+
 @keyframes animate {
   0% {
     opacity: 0;
     transform: rotate(45deg) translate(-20px, -20px);
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
     transform: rotate(45deg) translate(20px, 20px);
@@ -157,11 +161,9 @@ figcaption {
 
 #about {
   background-color: #062549;
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(6, 37, 73, 0.8),
-      rgba(6, 37, 73, 0.4)
-    ),
+      rgba(6, 37, 73, 0.4)),
     url('./img/AngleGrinder.jpg');
   background-position: center;
   background-attachment: fixed;
@@ -429,6 +431,53 @@ figcaption {
   color: inherit;
 }
 
+#social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  color: #f5f5f5;
+}
+
+#social-media-message {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+#social-media a {
+  text-decoration: none;
+}
+
+#social-media i {
+  font-size: 1.3em;
+}
+
+#social-media-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  width: 100%;
+}
+
+.social-media-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 8.5em;
+  padding: 0.5em;
+  border-radius: 3px;
+  background-color: #9aeba6;
+  text-align: center;
+  color: #062549;
+}
+
+.social-media-button:hover {
+  cursor: pointer;
+  background-color: #35c0ed;
+  color: #062549;
+}
+
 .contact-form {
   position: absolute;
   top: 10%;
@@ -524,8 +573,8 @@ figcaption {
   color: #eba69a;
 }
 
-.form-input:focus ~ .form-label,
-.form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label {
+.form-input:focus~.form-label,
+.form-input:not(:placeholder-shown).form-input:not(:focus)~.form-label {
   top: -10px;
   left: 10px;
   font-size: 0.8em;
@@ -538,11 +587,11 @@ figcaption {
   border: 1px solid #c5c4c4;
 }
 
-.form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-placeholder {
+.form-input:not(:placeholder-shown).form-input:not(:focus)~.form-placeholder {
   opacity: 0;
 }
 
-.form-input:focus ~ .form-placeholder {
+.form-input:focus~.form-placeholder {
   display: none;
 }
 
@@ -670,6 +719,7 @@ figcaption {
 /* Responsive Design Tweaks */
 
 @media only screen and (max-device-width: 1366px) {
+
   #home,
   #about {
     background-attachment: scroll;
@@ -715,7 +765,8 @@ figcaption {
   }
 }
 
-@media only screen and (max-width: 650px), (max-height: 600px) {
+@media only screen and (max-width: 650px),
+(max-height: 600px) {
   #home-main-logo {
     padding-top: 40vh;
   }
@@ -769,7 +820,8 @@ figcaption {
     align-content: center;
   }
 
-  #contact-details-phone-number {
+  #contact-details-phone-number,
+  #contact-details-email-address {
     margin-block-end: 1em;
   }
 }
@@ -877,5 +929,18 @@ figcaption {
 @media only screen and (max-width: 300px) {
   #footer-logo-button {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  #social-media-message {
+    display: none;
+  }
+
+  #social-media-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5em;
   }
 }

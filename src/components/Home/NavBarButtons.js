@@ -1,4 +1,4 @@
-import NavBarButton from './NavBarButton';
+import NavBarButton from './NavBarButton'
 
 const NavBarButtons = ({ clickStatus, handleClick }) => {
   return (
@@ -42,7 +42,7 @@ const NavBarButtons = ({ clickStatus, handleClick }) => {
         handleClick={handleClick}
       />
     </div>
-  );
-};
+  )
+}
 
-export default NavBarButtons;
+export default NavBarButtons
